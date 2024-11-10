@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header">
+        <h1 id="h1Tag">Resume Builder</h1>
+        <nav id="navLinks" class="md-flex">
+            <a href="#" class="nav-link" id="mainLink">My Resume</a>
+            <a href="/index.html" class="nav-link" id="createLink">Create Resume</a>
+      
+        </nav>
+        
+        <!-- Mobile Menu Toggle -->
+        <div id="toggleButton">
+            <button onclick="toggleMenu()">
+                <span id="menuIcon"><i class="fa-solid fa-bars"></i></span>
+                <span id="closeIcon" style="display: none;"><i class="fa-solid fa-xmark"></i>x</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="smallScreenMenu" class="small-screen-menu" style="display: none;">
+            <a href="/" class="small-screen-link" id="smallHomeLink">My Resume</a>
+            <a href="/index.html" class="small-screen-link" id="smallAboutLink">Create Resume</a>
+          
+        </div>
+
+       
+    
+    </header>
+
+     <!--Main Section-->
+     <main class="main-section">
+        <section class="Profile-info">
+            <div class="logo">
+                <img src="./assets/profile.jpg" alt="Logo">
+            </div>
+            <h1>Ayesha <span>Iqbal</span></h1>
+            <hr class="Costum-hr">
+            <h2>Front end <span> Developer</span></h2>
+            <p>Email: ayeshaiqbal771@gmail.com</p>
+            <p>Phone: (92) 315-3966801</p>
+            </section>
+        <div>
+            
+            <button class="toggle-button" data-target="Education">Education</button>
+            <button class="toggle-button" data-target="Skills">Skills</button>
+            <button class="toggle-button" data-target="Work Exprience">Work Experience</button>
+            
+        </div>
+        <hr class="costum0-hr">
+        <div class="Education" id="Education" style="display: block;">
+            <h2>Education</h2>
+           
+            <ul>
+                <li>
+                    <h3>Bachelor of Science</h3>
+                    <p>2018</p>
+                  
+                </li>
+                <li>
+                    <h3>Governor Initiative for Actificial Intelligence and Computing</h3>
+                    <p>Cloud Applied Generative AI- Currently in Quarter 2 , 2024</p>
+                  
+                    <hr class="costum0-hr">
+                </li>
+            </ul>
+        </div>
+        <div class="Skills" id="Skills" style="display:block;">
+            <h2>Skills</h2>
+         
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Typescript</li>
+                <li>Tailwind CSS</li>
+                <li>React</li>
+                <li>Next.js</li>
+                
+            </ul> 
+            <hr class="costum0-hr">
+        </div>
+        <div class="Work Exprience" id="Work Exprience" style="display: block;">
+            <h2>Work Exprience</h2>
+           
+          
+            <P>Participated in hackathons to create innovative solutions for various industries</P>
+            <P>Design and develop responsive websites using HTML CSS and Typescript</P>
+            <P>Mentored aspiring developers in front-end development</P>
+            <hr class="costum0-hr">
+        </div>
+    </main>
+
+  
+    <!--Footer Section-->
+    <footer>
+        <p>&copy; 2024 Ayesha Iqbal. All rights reserved.</p>
+        <p>Made with <i class="fa-solid fa-heart"></i> by Ayesha Iqbal</p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></i></a>
+            <a href="https://github.com/Ayesha1130"><i class="fa-brands fa-github"></i></i></a>
+        </div>
+    </footer>
+
+    <script src="src/main.js"></script>
+</body>
+</html>

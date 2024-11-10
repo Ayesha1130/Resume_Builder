@@ -1,0 +1,289 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #083c5d;
+  padding: 0, 50rem 0.95rem;
+  position: sticky;
+  z-index: 10;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+}
+
+#h1Tag {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 10px;
+  color: white;
+}
+
+/* Navigation Links */
+#navLinks {
+  display: none;
+  margin-left: auto;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.nav-link.active {
+  background-color: #d98310;
+  border-radius: 4px;
+}
+
+/* Mobile Menu */
+#toggleButton {
+  display: block;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+}
+
+#smallScreenMenu {
+  display: none;
+  flex-direction: column;
+  background-color: #99b0c7;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 100%;
+}
+
+.small-screen-link {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+}
+
+.small-screen-link.active {
+  background-color: #005bb5;
+}
+
+/* Hide the menu button and close icon on larger screens */
+@media (min-width: 768px) {
+  #toggleButton {
+    display: none;
+  }
+
+  #smallScreenMenu {
+    display: none;
+  }
+
+  #navLinks {
+    display: flex;
+  }
+  #h1Tag {
+    font-size: 30px;
+    align-items: center;
+  }
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Header section*/
+
+body {
+  background-color: #4889b2;
+}
+
+.logo img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+.logo img:hover {
+  scale: 1.2;
+}
+.Profile-info {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #083c5d;
+  color: #fff;
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.Profile-info h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.Profile-info span {
+  color: #d98310;
+}
+.Profile-info h2 {
+  margin-bottom: 10px;
+}
+
+.Costum-hr {
+  max-width: 80%;
+  height: 5px;
+  margin-bottom: 5px;
+  margin-left: 10%;
+  background-color: #d98310;
+  border: none;
+}
+
+/*Main section*/
+.toggle-button {
+  background-color: #d98310;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  border: none;
+}
+.toggle-button:hover {
+  background-color: #083c5d;
+}
+.main-section {
+  text-align: center;
+  align-items: center;
+  margin: 20px auto;
+  line-height: 1.5;
+}
+.costum0-hr {
+  width: 50%;
+  height: 5px;
+  margin-bottom: 10px;
+  margin-left: 25%;
+  background-color: #d98310;
+  border: none;
+}
+.main-section p {
+  line-height: 1.5;
+}
+/* Footer Section*/
+footer {
+  background-color: #083c5d;
+  color: #fff;
+  max-width: 600px;
+  text-align: center;
+  align-items: center;
+  margin: 20px auto;
+  line-height: 1.5;
+  padding: 20px;
+  border-radius: 5px;
+}
+.social-media i {
+  background-color: #d98310;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+.page01 {
+  background-color: #fdbb2d;
+  max-width: 100%;
+  height: 100vh;
+  color: white;
+}
+.container1 {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  font-size: 40px;
+}
+.container1 h2 {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.container1 h1 {
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  color: brown;
+}
+
+@keyframes fade {
+  from {
+    scale: 20;
+  }
+  to {
+    scroll-behavior: 20;
+  }
+}
+
+.container1 button {
+  padding: 100px;
+  background-color: #d98310;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.container1 button a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+.container1 button:hover {
+  background-color: #083c5d;
+}
+
+/* For mobile  */
+@media (max-width: 600px) {
+  body {
+    background-color: #add0f4;
+  }
+  .logo img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .logo img:hover {
+    scale: 1.2;
+  }
+  .Profile-info {
+    width: 90%;
+  }
+  .Work-Experience p {
+    font-size: 14px;
+  }
+  .Costum-hr {
+    width: 100%;
+  }
+  .costum0-hr {
+    width: 100%;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  footer {
+    width: 90%;
+  }
+  .container1 {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+  }
+  .container1 h1 {
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 30px;
+  }
+}

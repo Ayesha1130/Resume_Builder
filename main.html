@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+    <!-- form div -->
+    
+    <div id="formDiv" class="form-section">
+      
+        <section id="m3">
+         
+          <h1 class="main-heading">Dynamic Resume Builder</h1>
+  
+          <!-- Personal Information -->
+          <section>
+            <h2>Personal Information</h2>
+            <form id="personal-info-form" class="form-section">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+  
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+  
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone Number"
+                required
+              />
+  
+              <label for="address">Address:</label>
+              <textarea
+                id="address"
+                name="address"
+                placeholder="Country"
+                rows="3"
+                required
+              ></textarea>
+  
+              <label for="photo">Upload Photo:</label>
+              <input type="file" id="photo" name="photo" accept="image/*" />
+            </form>
+          </section>
+  
+          <!-- Education -->
+          <section>
+            <h2>Education</h2>
+            <form id="education-form" class="form-section">
+              <label for="institution">Institution:</label>
+              <input
+                type="text"
+                id="institution"
+                name="institution"
+                placeholder="University Name"
+                required
+              />
+  
+              <label for="degree">Degree:</label>
+              <input
+                type="text"
+                id="degree"
+                name="degree"
+                placeholder="Bachelor's in Computer Science"
+                required
+              />
+  
+              <label for="graduation-date">Graduation Date:</label>
+              <input
+                type="date"
+                id="graduation-date"
+                name="graduation-date"
+                required
+              />
+            </form>
+          </section>
+  
+          <!-- Skills -->
+          <section>
+            <h2>Skills</h2>
+            <form id="skills-form" class="form-section">
+              <label for="skills">Skills:</label>
+              <textarea
+                id="skills"
+                name="skills"
+                placeholder="Describe your skills"
+                rows="5"
+                required
+              ></textarea>
+            </form>
+          </section>
+  
+          <!-- Work Experience -->
+          <section>
+            <h2>Work Experience</h2>
+            <form id="work-experience-form" class="form-section">
+              <label for="company">Company:</label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                placeholder="Company Name"
+                required
+              />
+  
+              <label for="position">Position:</label>
+              <input
+                type="text"
+                id="position"
+                name="position"
+                placeholder="Job Title"
+                required
+              />
+  
+              <label for="start-date">Start Date:</label>
+              <input type="date" id="start-date" name="start-date" required />
+  
+              <label for="end-date">End Date:</label>
+              <input type="date" id="end-date" name="end-date" />
+  
+              <label for="responsibilities">Responsibilities:</label>
+              <textarea
+                id="responsibilities"
+                name="responsibilities"
+                placeholder="Describe your responsibilities"
+                rows="5"
+                required
+              ></textarea>
+            </form>
+          </section>
+  
+          <!-- socail medai account section -->
+          <section>
+            <h2>Social Acounts</h2>
+            <label for="links">Social media Links</label>
+            <form class="farm-section" id="links"></form>
+            <input
+              type="url"
+              placeholder="Enter your LinkedIn profile"
+              id="linkedInInput"
+              required
+            />
+            <br />
+            <input
+              type="url"
+              placeholder="Enter your Github profile"
+              id="githubInput"
+              required
+            />
+          </section>
+        </section>
+      </div>
+  
+      
+      <!-- Resume Output -->
+      <div id="outputDiv" class="resume-container">
+        <section id="m1">
+          
+          <h1 id="displayHeading"></h1>
+          <div class="resume-container">
+            <!-- personal information -->
+            <div class="resume-header">
+              <div id="displayPhoto"></div>
+              <h1 id="displayName"></h1>
+              <p id="displayEmail"><strong></strong></p>
+              <p id="displayPhone"></p>
+              <p id="displayAddress"></p>
+            </div>
+  
+            <!-- Education Section -->
+            <div class="resume-section">
+              <h1>Education</h1>
+              <p id="displayInstitution"><strong></strong></p>
+              <p id="displayDegree"></p>
+              <p id="displayDraduation"></p>
+            </div>
+  
+            <!-- skills section -->
+            <div class="resume-section">
+              <h1>Skills</h1>
+              <p id="displaySkills"></p>
+            </div>
+  
+            <!-- Experience section -->
+            <div class="resume-section">
+              <h1>Work Experience</h1>
+              <p id="displayCompany"><strong></strong></p>
+              <p id="displayPosition"></p>
+              <p id="displayStartDate"></p>
+              <p id="displayEndDate"></p>
+              <p>Responsibilities:</p>
+              <p id="displayResponsibilities"></p>
+            </div>
+  
+            <!-- Social Medai Acount section -->
+            <div class="resume-section accounts">
+              <div id="displayLinks" class="links-container"></div>
+            </div>
+          </div>
+        </section>
+        <div class="btnsDiv">
+        <button type="button" id="downloadResume" class="dbtn">
+          Download Resume
+        </button>
+        <button type="button" id="copyResume" class="cbtn">Copy Link</button>
+      </div>
+      </div>
+  
+      <button type="button" id="generateResume" class="submit-btn">
+        Generate Resume
+      </button>
+    
+
+
+    <script src="src/script.js"></script>
+</body>
+</html>
+
